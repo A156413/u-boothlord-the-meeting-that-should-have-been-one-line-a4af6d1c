@@ -2,12 +2,13 @@
 
 Writes the single sentence that could have replaced an entire pointless
 meeting to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output) and prints it.
+The line: an hour spent deciding nothing, then rebooked to decide it again.
 """
 
 import os
 import stat
 
-ENTRY_TEXT = "This meeting could have been an email, and this email could have been nothing."
+ENTRY_TEXT = "We spent an hour deciding nothing, then booked another to decide it again."
 
 assert 1 <= len(ENTRY_TEXT) <= 200, "entry must be 1-200 characters"
 assert "\n" not in ENTRY_TEXT.strip(), "entry must be a single line"
